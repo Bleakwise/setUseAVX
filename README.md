@@ -4,15 +4,15 @@ setUseAVX is a simple script that adds the expression "bUseAVX = True;" to a val
 As of 4.11 the release branch of UE4 has over 400 Build.cs files, making it quite tedious to add bUseAVX = True; to every single one. The aim of this script is to parse Build.cs files, and if the appropriate code-block is present it adds the aformentioned expressoin on a new line.
   
 
-###1. Usage:
+### Usage:
   1. Replace set SourceDir as the path to your "<...>\UnrealEngine\Engine\Source" directory.
   2. Run.
 
-###2. Future Goals:<br />
+### Future Goals:<br />
   1. Parallelize the outer loop.
   2. Take "<...>\UnrealEngine\Engine\Source" as input from the command line.
 
-###3. Known bugs:
+### Known bugs:
   1. Adds duplicate **_bUseAVX = True;_** expressions on consecutive runs. C# allows us to redefine bUseAVX an almost unlimited number of times, so, we can get away with this, but I don't see this passing as a feature so it needs to be fixed.
     1. Solutoin: Test the whole Build.cs file for the expressoin or conflicting expressions before starting the overwriting process.
   2. There is an issue writing to the correct locatoin if using non-conforming (UE4 uses something like Allman style) indent style such as those that place the opening brace on the same line as the class constructor's signature like so: <br /> **_public AITestSuite(TargetInfo Target){_**

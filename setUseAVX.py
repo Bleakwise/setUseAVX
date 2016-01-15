@@ -52,7 +52,7 @@ def editBuildFile(file_name):
                     file_object.truncate()
                     file_object.close()
                     return file_buffer
-        file_object.close()
+    file_object.close()
         
     return file_buffer
 

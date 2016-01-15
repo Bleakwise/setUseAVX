@@ -18,7 +18,7 @@ As of 4.11 the release branch of UE4 has over 400 Build.cs files, making it quit
   2. There is an issue writing to the correct locatoin if using non-conforming (UE4 uses something like Allman style) indent style such as those that place the opening brace on the same line as the class constructor's signature like so: <br /> **_public AITestSuite(TargetInfo Target){_**
     1. Solution: Use pattern matching to test for an opening brace on the same line as the constructor signature 
 
-###4. The MIT License (MIT)
+### The MIT License (MIT)
 >
 >Copyright (c) 2016 Russell Barlow III
 >

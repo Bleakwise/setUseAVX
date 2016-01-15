@@ -13,9 +13,9 @@ As of 4.11 the release branch of UE4 has over 400 Build.cs files, making it quit
   2. Take "<...>\UnrealEngine\Engine\Source" as input from the command line.
 
 ###3. Known bugs:
-  1. Adds duplicate **_bUseAVX = True;_** expressions on consecutive runs. C# allows us to redefine bUseAVX so, we can get away with this, but it's still kind of crude.
+  1. Adds duplicate **_bUseAVX = True;_** expressions on consecutive runs. C# allows us to redefine bUseAVX an almost unlimited number of times, so, we can get away with this, but I don't see this passing as a feature so it needs to be fixed.
     1. Solutoin: Test the whole Build.cs file for the expressoin or conflicting expressions before starting the overwriting process.
-  2. Because of the logic involved, there is an issue writing to the correct locatoin if using non-conforming (UE4 uses something like Allman style) indent style, such as those that place the opening brace **_{_** on the same line as the class constructor's signature, ie: *_public AITestSuite(TargetInfo Target){_*
+  2. There is an issue writing to the correct locatoin if using non-conforming (UE4 uses something like Allman style) indent style such as those that place the opening brace on the same line as the class constructor's signature like so: <br /> **_public AITestSuite(TargetInfo Target){_**
     1. Solution: Use pattern matching to test for an opening brace on the same line as the constructor signature 
 
 ###4. The MIT License (MIT)

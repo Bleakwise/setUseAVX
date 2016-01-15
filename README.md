@@ -1,7 +1,8 @@
 ## setUseAVX
 setUseAVX is a simple script that adds the expression "bUseAVX = True;" to a valid part of all Build.cs source files. AVX support was added in Unreal Engine 4.9 on a per-module basis.
+
     New: AVX support can now be enabled on a per-module basis by settings bUseAVX = true in a module's .Build.cs rules file.
-As of 4.11 the release branch of UE4 has over 400 Build.cs files, making it quite tedious to add bUseAVX = True; to every single one. The aim of this script is to parse Build.cs files, and if the appropriate code-block is present it adds the aformentioned expressoin on a new line.
+    as of 4.11 the release branch of UE4 has over 400 Build.cs files, making it quite tedious to add bUseAVX = True; to every single  one. The aim of this script is to parse Build.cs files, and if the appropriate code-block is present it adds the aformentioned    expressoin on a new line.
   
 
 ### Usage:

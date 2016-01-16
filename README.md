@@ -3,8 +3,7 @@ As of UE4.9 UE4 has had optional support for hardware with AVX instructions, whi
 
 setUseAVX is a simple script that adds the expression **_bUseAVX = True;_** to a valid part of all Build.cs source files. This script was written because enabling AVX in all Build.cs files is a very tedious process to carry out every time Epic pushes a new release. 
 
-For more about what was added in 4.9 see the following...
-
+For more about what was added in 4.9 see the following...<br />
 https://www.unrealengine.com/blog/unreal-engine-49-released
 >New: AVX support can now be enabled on a per-module basis by settings bUseAVX = true in a module's .Build.cs rules file.
   

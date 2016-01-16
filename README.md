@@ -26,7 +26,7 @@ https://www.unrealengine.com/blog/unreal-engine-49-released
     1. Solution: Use pattern matching to test for an opening brace on the same line as the constructor signature 
 
 ### Advisory:
-This is very much pre-alpha software and has not been rigorously tested for safety. I find this useful for my personal needs but I give this to you using the MIT license "AS IS" for this reason. That said if it's here it worked for me, so maybe it will work for you, but disgression is adviced.
+The Master branch should be considered pre-alpha software that has not been rigorously tested for safety. I find this useful for my personal needs but I give this to you using the MIT license "AS IS" for this reason. That said if it's here it worked for me, so maybe it will work for you, but disgression is adviced.
 
 ### The MIT License (MIT)
 >

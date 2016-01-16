@@ -1,5 +1,5 @@
 ### What is setUseAVX and why was it made?
-setUseAVX is a simple script that adds the expression **_bUseAVX = True;_** to the class constructors of all Build.cs source files. This script was written because enabling AVX in all Build.cs files is a very tedious process to carry out every time Epic pushes a new release. 
+setUseAVX is a simple script that adds the expression **_bUseAVX = True;_** to the class constructors of all Build.cs source files. This script was written because enabling AVX in all Build.cs files one by one by hand is a very tedious process, and even more tedious to carry out every time Epic pushes a new release. 
 
 Unreal Engine 4 has had optional support for AVX instructions as of Unreal Engine 4.9. AVX hardware has been included in both AMD and Intel's desktop lineups since the releases of Bulldozer and Sandy Bridge respectfully.
 

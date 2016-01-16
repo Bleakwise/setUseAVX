@@ -24,8 +24,9 @@
 from __future__ import print_function
 from __future__ import division
 import os
+import re
 
-SourceDir = "D:\Users\Russell\Documents\Unreal Projects\UnrealEngine\Engine\Source"
+SourceDir = "C:\\Users\\guita_000\\Desktop\\Test"
 buildFilesList=[]
 
 def buildBuildFileList(SourceDir):
@@ -55,6 +56,26 @@ def editBuildFile(file_name):
     file_object.close()
         
     return file_buffer
+
+def editBuildFileRegex(file_name):
+
+    #Open Source Build File
+    file_object = open(file_name, "rt+")
+
+    #Read The Build File Into Memory
+    file_buffer = ''.join(file_object.readlines())
+    
+    #Remove All Occurences Of bUseAVX = xxx;
+    file_buffer = re.sub("[ \t]*bUseAVX[ \t]*=[ \t]*[true]*[false]*[ \t]*;[\s]*", "\t\t\t", file_buffer )
+
+    #Add bUseAVX = true;
+    file_buffer = re.sub("(TargetInfo[ \t]+\w*[ \t]*\)\s*){", "\\1{\n\t\t\tbUseAVX = true;\n", file_buffer)
+    
+    #Write Result Back To File
+    file_object.seek(0)
+    file_object.writelines(file_buffer)
+    file_object.truncate()
+    file_object.close()
 
 def editBuildFileList(SourceDir):
     buildFilesList = buildBuildFileList(SourceDir)

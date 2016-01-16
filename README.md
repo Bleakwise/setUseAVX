@@ -3,8 +3,8 @@ setUseAVX is a simple script that adds the expression **_bUseAVX = True;_** to t
 
 Unreal Engine 4 has had the optoin to target AVX instructions as of Unreal Engine 4.9. AVX hardware support has been included in AMD and Intel desktop products since the releases of Bulldozer and Sandy Bridge respectfully.
 
-For more on AVX itself and why you would want to use it see...<br />
-https://en.wikipedia.org/wiki/Advanced_Vector_Extensions
+For more on AVX itself and why you would want to use it <br />
+https://software.intel.com/en-us/articles/introduction-to-intel-advanced-vector-extensions
 
 For more about what was added in 4.9 see the following...<br />
 https://www.unrealengine.com/blog/unreal-engine-49-released

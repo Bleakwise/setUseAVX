@@ -26,7 +26,7 @@ https://www.unrealengine.com/blog/unreal-engine-49-released
     1. Solution: Use pattern matching to test for an opening brace on the same line as the constructor signature 
 
 ### Advisory:
-I find this useful for my personal needs but I provide this to you "AS IS" per the MIT license. If it's here it worked for me, so maybe it will work for you, but user disgression is adviced.
+I find this useful for my personal needs but I provide this to you "AS IS" per the MIT license. If it's here it worked for me, but user disgression is adviced.
 
 ### The MIT License (MIT)
 >

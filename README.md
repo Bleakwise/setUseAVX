@@ -25,6 +25,9 @@ https://www.unrealengine.com/blog/unreal-engine-49-released
   2. There is an issue writing to the correct locatoin if using non-conforming (UE4 uses something like Allman style) indent style such as those that place the opening brace on the same line as the class constructor's signature like so: <br /> **_public AITestSuite(TargetInfo Target){_**
     1. Solution: Use pattern matching to test for an opening brace on the same line as the constructor signature 
 
+### Warning:
+This is very much alpha software. I find this useful for my personal needs but I give this to you using the MIT license for a reason. Just be sure to do a backup before running this and you should be immune from any major issues.
+
 ### The MIT License (MIT)
 >
 >Copyright (c) 2016 Russell Barlow III

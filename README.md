@@ -1,7 +1,7 @@
 ### What is setUseAVX and why was it made?
-As of UE4.9 UE4 has had optional support for hardware with AVX instructions, which has been included in both AMD and Intel's desktop lineups since the releases of Bulldozer and Sandy Bridge respectfully.
-
 setUseAVX is a simple script that adds the expression **_bUseAVX = True;_** to a valid part of all Build.cs source files. This script was written because enabling AVX in all Build.cs files is a very tedious process to carry out every time Epic pushes a new release. 
+
+Unreal Engine 4 has had optional support for AVX instructions as of Unreal Engine 4.9. AVX hardware has been included in both AMD and Intel's desktop lineups since the releases of Bulldozer and Sandy Bridge respectfully.
 
 For more about what was added in 4.9 see the following...<br />
 https://www.unrealengine.com/blog/unreal-engine-49-released

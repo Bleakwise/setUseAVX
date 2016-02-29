@@ -20,10 +20,6 @@ https://www.unrealengine.com/blog/unreal-engine-49-released
   2. Take "<...>\UnrealEngine\Engine\Source" as input from the command line.
 
 ### Known bugs:
-  1. Adds duplicate **_bUseAVX = True;_** expressions on consecutive runs. C# allows us to redefine bUseAVX an almost unlimited number of times, so, we can get away with this, but I don't see this passing as a feature so it needs to be fixed.
-    1. Solutoin: Test the whole Build.cs file for the expressoin or conflicting expressions before starting the overwriting process.
-  2. There is an issue writing to the correct locatoin if using non-conforming (UE4 uses something like Allman style) indent style such as those that place the opening brace on the same line as the class constructor's signature like so: <br /> **_public AITestSuite(TargetInfo Target){_**
-    1. Solution: Use pattern matching to test for an opening brace on the same line as the constructor signature 
 
 ### Advisory:
 I released this script because I found it useful for my personal needs but user disgression is advised.
